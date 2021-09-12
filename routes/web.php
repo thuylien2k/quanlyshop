@@ -12,5 +12,21 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'home']);
+Route::get('/login', [HomeController::class, 'loginFrom']);
+Route::post('/login', [HomeController::class, 'login']);
+Route::post('/register',[HomeController::class, 'register']);
+Route::get('/register',[HomeController::class, 'registerFrom']);
+Route::get('/quan', [HomeController::class, 'quan']);
+Route::get('/ao', [HomeController::class, 'ao']);
+Route::get('/vay', [HomeController::class, 'vay']);
+Route::get('/dam', [HomeController::class, 'dam']);
+Route::get('/set', [HomeController::class, 'set']);
+Route::get('/chitietsp1', [HomeController::class, 'chitietsp1']);
+Route::get('/chitietsp2', [HomeController::class, 'chitietsp2']);
+Route::get('/qltaikhoan', [HomeController::class, 'qltaikhoan']);
+Route::get('/taotaikhoan', [HomeController::class, 'taotaikhoan']);
+Route::get('/quanlydanhmuc', [HomeController::class, 'quanlydanhmuc']);
+Route::get('/taodanhmuc', [HomeController::class, 'taodanhmuc']);
+Route::get('/quanlysp', [HomeController::class, 'quanlysp']);
+Route::get('/taosp', [HomeController::class, 'taosp']);
